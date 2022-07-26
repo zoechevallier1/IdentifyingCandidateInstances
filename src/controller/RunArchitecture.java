@@ -1,31 +1,24 @@
 package controller;
 
-import com.fasterxml.jackson.databind.annotation.JsonAppend;
-import controller.ProjectManager;
 import model.*;
 
-import org.apache.jena.base.Sys;
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.*;
-import org.apache.jena.rdf.model.impl.PropertyImpl;
 import org.apache.jena.vocabulary.OWL;
 import org.apache.jena.vocabulary.RDF;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
 
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.validation.Schema;
+
 import java.io.File;
 import java.io.IOException;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 
@@ -37,6 +30,8 @@ public class RunArchitecture {
     private ArrayList<InstancesMatchs> links;
     private ArrayList<Resource> instanciate = new ArrayList<Resource>();
 
+    private ArrayList<Mapping> mappings;
+
     ArrayList<Resource[]> classMatch = new ArrayList<Resource[]>();
 
     public RunArchitecture(ProjectManager projectManager){
@@ -44,6 +39,7 @@ public class RunArchitecture {
         this.projectManager = projectManager;
         this.matchs = new ArrayList<SchemaMatchs>();
         this.links = new ArrayList<InstancesMatchs>();
+        this.mappings = new ArrayList<Mapping>();
 
     }
 
@@ -123,10 +119,18 @@ public class RunArchitecture {
             classMatch.add(resource);
         }
 
-
+        Mapping mapping;
         // Pour chaque couple classeCible/classeSource
         for (Resource[] r : classMatch){
+             mapping = getMapping(r[0].toString());
+
+             if (mapping == null){
+                 mapping = new Mapping(r[0].toString());
+             }
+
+            mappings.add(mapping);
             Source source = projectManager.getSourceByResourceClass(r[1]);
+            mapping.addSource(source);
             //System.out.println("Source que l'on regarde : " + source.getFileSource().getName());
             //System.out.println(r[1].toString());
 
@@ -343,5 +347,15 @@ public class RunArchitecture {
 
     //Supprimer les sameAs déjà présents
     public void deleteSameAs(){
+    }
+
+    public Mapping getMapping(String targetClass){
+        if (this.mappings.size() == 0)
+            return  null;
+        for (Mapping mapping : this.mappings)
+            if (mapping.getTargetClass().equals(targetClass)) {
+                return mapping;
+            }
+        return null;
     }
 }

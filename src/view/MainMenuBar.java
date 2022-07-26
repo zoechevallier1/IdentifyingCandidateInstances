@@ -1,6 +1,7 @@
 package view;
 
 import controller.RunArchitecture;
+import org.apache.jena.base.Sys;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -141,7 +142,8 @@ public class MainMenuBar extends JMenuBar {
         ShowMappingDialog showMappingDialog = new ShowMappingDialog();
         showMappingDialog.setVisible(true);
         if (showMappingDialog.getDialogResult()== JOptionPane.OK_OPTION){
-            ShowMapping showMapping = new ShowMapping(showMappingDialog.getSelectedClass());
+            System.out.println(showMappingDialog.getSelectedClass());
+            ShowMapping showMapping = new ShowMapping(DI_APP.getMainWindow().getRunArchitecture().getMapping(showMappingDialog.getSelectedClass()));
 
         }
 
