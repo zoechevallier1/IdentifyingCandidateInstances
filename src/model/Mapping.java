@@ -9,5 +9,6 @@ public class Mapping {
 
     public Mapping(String targetClass){
         this.targetClass = targetClass;
+        sources = new ArrayList<Source>();
     }
 }
