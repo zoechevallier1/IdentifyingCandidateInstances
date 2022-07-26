@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+	 xmlns="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#"
+     xml:base="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:mediatheques-gps-nov2020="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#">
+    <owl:Ontology rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#adresse -->
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#adresse">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#categorie -->
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#categorie">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#click_collect -->
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#click_collect">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#codeinsee -->
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#codeinsee">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#commune -->
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#commune">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#contact -->
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#contact">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#courriel -->
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#courriel">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#geopoint -->
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#geopoint">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#horaires_special_confinement -->
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#horaires_special_confinement">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#nom_de_l_etablissement -->
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#nom_de_l_etablissement">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#reseaux_sociaux -->
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#reseaux_sociaux">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheque-gps-nov2020-record -->
+
+    <owl:Class rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#9878b02b2d835967ea153bc302c342ba994c4fc3 -->
+
+    <rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#9878b02b2d835967ea153bc302c342ba994c4fc3">
+		<rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+        <mediatheques-gps-nov2020:adresse>Place du 14 juillet 1789</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+        <mediatheques-gps-nov2020:click_collect>via le portail, par mail, et par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77296</mediatheques-gps-nov2020:codeinsee>
+        <mediatheques-gps-nov2020:commune>Moissy-Cramayel</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 64 88 17 40</mediatheques-gps-nov2020:contact>
+        <mediatheques-gps-nov2020:courriel>mediatheque.moissycramayel@grandparissud.fr</mediatheques-gps-nov2020:courriel>
+        <mediatheques-gps-nov2020:geopoint>48.628146,2.58991</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>Guichet retrait Clic &amp; Collecte Mardi, Mercredi, Vendredi, Samedi, de 14h00 à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Média-ludothèque La Rotonde</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>pas de réseaux sociaux, un portail : http://www.mediatheque-moissycramayel.eu/</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#a55e0c4c28f286b1f899fb6ae3a4a1215a473ef8">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>1-3 place Paul Desphelipon</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+        <mediatheques-gps-nov2020:click_collect>via le portail, par mail, et par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77445</mediatheques-gps-nov2020:codeinsee>
+        <mediatheques-gps-nov2020:commune>Savigny-le-Temple</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 64 79 61 70</mediatheques-gps-nov2020:contact>
+        <mediatheques-gps-nov2020:courriel>mediatheque.savignyletemple@grandparissud.fr</mediatheques-gps-nov2020:courriel>
+        <mediatheques-gps-nov2020:geopoint>48.581685,2.582766</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>mardi, mercredi, vendredi et samedi de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>des Cités Unies</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>Portail : http://www.mediatheques-savigny-le-temple.fr/</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#653560f63ecf9a5a2b3da4559d4a74282b84ce63">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>5 rue du 8 Mai 1945</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+        <mediatheques-gps-nov2020:click_collect>Ouvert au public, par téléphone aux horaires du Clic  Collect</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91521</mediatheques-gps-nov2020:codeinsee>
+        <mediatheques-gps-nov2020:commune>Ris-Orangis</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 69 43 86 90</mediatheques-gps-nov2020:contact>
+        <mediatheques-gps-nov2020:geopoint>48.656803,2.410889</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>Guichet retrait Clic  Collecte les mercredis, samedis de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Raymond Queneau</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>Pas de réseaux sociaux un portail https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#dd4fe8e4a138a9bc2775ac0655b435b60911a262">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>1 rue de la Plaine</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+        <mediatheques-gps-nov2020:click_collect>Ouvert au public, par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91286</mediatheques-gps-nov2020:codeinsee>
+		<mediatheques-gps-nov2020:commentaire>sacs surprises composés par les médiathécaires, pour tous les âges</mediatheques-gps-nov2020:commentaire>
+        <mediatheques-gps-nov2020:commune>Grigny</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 78 84 22 22</mediatheques-gps-nov2020:contact>
+        <mediatheques-gps-nov2020:geopoint>48.655134,2.387269</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>Ouverture les mardis, mercredis et samedis de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Victor Hugo à Grigny</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#09ba2b80a522007164a131097dcb170b6eb0ee86">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>Mail de l'île de France - Long Rayage</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+        <mediatheques-gps-nov2020:click_collect>Ouvert au public, par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91340</mediatheques-gps-nov2020:codeinsee>
+        <mediatheques-gps-nov2020:commune>Lisses</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 69 11 48 80</mediatheques-gps-nov2020:contact>
+        <mediatheques-gps-nov2020:geopoint>48.611697,2.417367</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>Ouverture les mardis, mercredis, vendredis, samedis de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Colette</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#d3304d56916566b4725c9956885f4ba6322febe0">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>Rue du Village</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+        <mediatheques-gps-nov2020:click_collect>Ouvert au public, par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91228</mediatheques-gps-nov2020:codeinsee>
+		<mediatheques-gps-nov2020:commentaire>angle avec le parc Henri Fabre</mediatheques-gps-nov2020:commentaire>
+        <mediatheques-gps-nov2020:commune>Evry-Courcouronnes</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 69 89 80 02</mediatheques-gps-nov2020:contact>
+        <mediatheques-gps-nov2020:geopoint>48.631496,2.446821</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>Ouverture les mardis, mercredis, vendredis, samedis de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Camus</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#5ff9e92e2da5ff7cddd19cffb0e458d9b061e241">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>8-10 rue du Marquis de Raies</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+        <mediatheques-gps-nov2020:click_collect>Ouvert au public, par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91228</mediatheques-gps-nov2020:codeinsee>
+		<mediatheques-gps-nov2020:commentaire>angle avec le parc Henri Fabre</mediatheques-gps-nov2020:commentaire>
+        <mediatheques-gps-nov2020:commune>Evry-Courcouronnes</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 60 77 21 02</mediatheques-gps-nov2020:contact>
+        <mediatheques-gps-nov2020:geopoint>48.629348,2.413586</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>Ouverture les mardis, mercredis, vendredis, samedis de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Perec</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#46db2184bb2e4893438edd259e97d440a35efa06">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>17 rue du Château d'eau</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+        <mediatheques-gps-nov2020:click_collect>Ouvert au public, par téléphone aux horaires du Clic Collect</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91521</mediatheques-gps-nov2020:codeinsee>
+        <mediatheques-gps-nov2020:commune>Ris-Orangis</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 69 02 10 70</mediatheques-gps-nov2020:contact>
+        <mediatheques-gps-nov2020:geopoint>48.650893,2.40423</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>Guichet retrait Clic Collecte les mardis, mercredis, vendredis, samedis de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Elsa Triolet</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>Pas de réseaux sociaux un portail : 'https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+
+
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#0d91aebb85291f58978e3b402c2a7e400dd2ed89">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>Place Roland Vincent</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+        <mediatheques-gps-nov2020:click_collect>Ouvert au public aux horaires du Clic Collect, via le portail, par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91659</mediatheques-gps-nov2020:codeinsee>
+        <mediatheques-gps-nov2020:commune>Villabé</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 60 86 03 06</mediatheques-gps-nov2020:contact>
+        <mediatheques-gps-nov2020:geopoint>48.587824,2.455715</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>mardi, mercredi, vendredi et samedi de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Alain Ramey</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#ec26bd5ead1c40f33e860ea04abd6d9a9493093f">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>rue Jean-François Millet</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+        <mediatheques-gps-nov2020:click_collect>Via liens sac ad hoc et réservation par télephone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77122</mediatheques-gps-nov2020:codeinsee>
+        <mediatheques-gps-nov2020:commune>Combs-la-Ville</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 64 88 61 53</mediatheques-gps-nov2020:contact>
+        <mediatheques-gps-nov2020:geopoint>48.659337,2.565087</mediatheques-gps-nov2020:geopoint>
+		<mediatheques-gps-nov2020:courriel>mediathque.combs@grandparissud.fr</mediatheques-gps-nov2020:courriel>
+        <mediatheques-gps-nov2020:horaires_special_confinement>mardi, mercredi, vendredi et samedi de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Média-ludothèque Combs-la-Ville</mediatheques-gps-nov2020:nom_de_l_etablissement>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#35bc95d26fef7ff30dcbcf38ff09485e73811141">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>1 rue de la Poste</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+        <mediatheques-gps-nov2020:click_collect>Ouvert au public, par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91086</mediatheques-gps-nov2020:codeinsee>
+        <mediatheques-gps-nov2020:commune>Bondoufle</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 60 86 44 01</mediatheques-gps-nov2020:contact>
+        <mediatheques-gps-nov2020:geopoint>48.613707,2.377475</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>mardi, mercredi, vendredi et samedi de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Condorcet</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#3012979c48cfd34c96808d4d7403daf5d80512ff">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>109 place de l'Agora</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+        <mediatheques-gps-nov2020:click_collect>Ouvert au public, par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91228</mediatheques-gps-nov2020:codeinsee>
+        <mediatheques-gps-nov2020:commune>Evry-Courcouronnes</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 69 91 59 59</mediatheques-gps-nov2020:contact>
+        <mediatheques-gps-nov2020:geopoint>48.629082,2.429546</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>Ouverture les mardis, mercredis, vendredis, samedis de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>de l'Agora</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#08946e39e6075d40adf420e00cb075e29c4bf76c">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>11 place Condorcet</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77495</mediatheques-gps-nov2020:codeinsee>
+        <mediatheques-gps-nov2020:commune>Vert-Saint-Denis</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 64 87 65 76 ou 01 64 87 65 77 (pendant fermeture)</mediatheques-gps-nov2020:contact>		
+		<mediatheques-gps-nov2020:courriel>medialudo.vertsaintdenis@grandparissud.fr</mediatheques-gps-nov2020:courriel>
+        <mediatheques-gps-nov2020:geopoint>48.563652,2.615733</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>Fermerture provisoire cause incendie</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Médialudo Gérard Philipe</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>Facebook : https://www.facebook.com/Médialudo-de-Vert-Saint-Denis / Portail : https://medialudo-vert-saint-denis.bibli.fr/</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#d5cdf342e3a7480a52cab73273475cc7761a223b">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>23 bis avenue des Sablons</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+		<mediatheques-gps-nov2020:click_collect>Ouvert au public, par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91286</mediatheques-gps-nov2020:codeinsee>
+		<mediatheques-gps-nov2020:commentaire>sacs surprises composés par les médiathécaires, pour tous les âges</mediatheques-gps-nov2020:commentaire>
+        <mediatheques-gps-nov2020:commune>Grigny</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 78 84 22 23</mediatheques-gps-nov2020:contact>		
+        <mediatheques-gps-nov2020:geopoint>48.65528,2.390325</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>Ouverture les mercredis, vendredis et samedis de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Pablo Picasso</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#64935c96d46a86967d7363cf6de2e8bf664a2040">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>86 rue de Paris</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+		<mediatheques-gps-nov2020:click_collect>via le portail, par mail, et par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77251</mediatheques-gps-nov2020:codeinsee>
+        <mediatheques-gps-nov2020:commune>Lieusaint</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 64 13 33 90</mediatheques-gps-nov2020:contact>		
+        <mediatheques-gps-nov2020:geopoint>48.630087,2.553968</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>Guichet retrait Clic Collecte Mardi, Mercredi, Vendredi, Samedi, de 14h00 à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Côté Cour</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>pas de réseaux sociaux, un portail : http://lieusaint.e-sezhame.fr/</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#15f4d7929ab60208657812d1248c41fcdb986bc9">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>41 avenue Charles de Gaulle</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+		<mediatheques-gps-nov2020:click_collect>Ouvert au public aux horaires du clic collect, via le portail, par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91179</mediatheques-gps-nov2020:codeinsee>
+		<mediatheques-gps-nov2020:commentaire>dans le  C.C Les Terrasses</mediatheques-gps-nov2020:commentaire>
+        <mediatheques-gps-nov2020:commune>Le Coudray Montceaux</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 60 77 03 47</mediatheques-gps-nov2020:contact>		
+        <mediatheques-gps-nov2020:geopoint>48.565285,2.486286</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>mardi, mercredi, vendredi et samedi de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Média-ludothèque La Belle Gabrielle</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#77f1776679737b105b66cc58999b8600dbe6111b">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>1 rue Neuve</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+		<mediatheques-gps-nov2020:click_collect>via le portail, par mail, et par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77326</mediatheques-gps-nov2020:codeinsee>
+        <mediatheques-gps-nov2020:commune>Nandy</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 60 77 03 47</mediatheques-gps-nov2020:contact>		
+		<mediatheques-gps-nov2020:courriel>bibliotheque.nandy@grandparissud.fr</mediatheques-gps-nov2020:courriel>
+        <mediatheques-gps-nov2020:geopoint>48.579752,2.565055</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>Guichet retrait Clic Collecte Mardi, Mercredi, Vendredi, Samedi, de 14h00 à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Média-ludothèque La Belle Gabrielle</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>pas de réseaux sociaux, un portail : http://www.mediatheque-nandy.fr</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#75245278c0f808f80314aee92612c937384c8442">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>4 place du Miroir d'eau</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+		<mediatheques-gps-nov2020:click_collect>Via le portail et par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77445</mediatheques-gps-nov2020:codeinsee>
+        <mediatheques-gps-nov2020:commune>Savigny-le-Temple</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 64 79 61 70</mediatheques-gps-nov2020:contact>		
+		<mediatheques-gps-nov2020:courriel>mediatheque.savignyletemple@grandparissud.fr</mediatheques-gps-nov2020:courriel>
+        <mediatheques-gps-nov2020:geopoint>48.602178,2.567038</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>mercredi et samedi de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Jacques Prévert</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>Portail : http://www.mediatheques-savigny-le-temple.fr/</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#a1c6df0cb3c878965fa5c7b33902a93f6be90557">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>Place de l'Europe</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+		<mediatheques-gps-nov2020:click_collect>Ouvert au public aux horaires du clic collect, via le portail https://stgermainlescorbeil.bibenligne.fr/, par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">91553</mediatheques-gps-nov2020:codeinsee>
+		<mediatheques-gps-nov2020:commentaire>adresse précise : 1 place Victor Hugo</mediatheques-gps-nov2020:commentaire>
+        <mediatheques-gps-nov2020:commune>Saint-Germain-lès-Corbeil</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 60 75 08 15</mediatheques-gps-nov2020:contact>		
+		<mediatheques-gps-nov2020:courriel>media.sglc@grandparissud.fr</mediatheques-gps-nov2020:courriel>
+        <mediatheques-gps-nov2020:geopoint>48.620372,2.492423</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>mardi, mercredi, vendredi et samedi de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>Victor Hugo à SGLC</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#9e0b418ed86de6c830ee7d64adc27a024358471d">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#mediatheques-gps-nov2020-record" />
+		<mediatheques-gps-nov2020:adresse>1 rue du Châtelet</mediatheques-gps-nov2020:adresse>
+        <mediatheques-gps-nov2020:categorie>Médiathèque</mediatheques-gps-nov2020:categorie>
+		<mediatheques-gps-nov2020:click_collect>via le portail, par mail, et par téléphone</mediatheques-gps-nov2020:click_collect>
+        <mediatheques-gps-nov2020:codeinsee rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77067</mediatheques-gps-nov2020:codeinsee>
+        <mediatheques-gps-nov2020:commune>Cesson</mediatheques-gps-nov2020:commune>
+        <mediatheques-gps-nov2020:contact>01 60 63 57 14</mediatheques-gps-nov2020:contact>		
+		<mediatheques-gps-nov2020:courriel>mediatheque.cesson@grandparissud.fr</mediatheques-gps-nov2020:courriel>
+        <mediatheques-gps-nov2020:geopoint>48.565592,2.603529</mediatheques-gps-nov2020:geopoint>
+        <mediatheques-gps-nov2020:horaires_special_confinement>mardi, mercredi, vendredi et samedi de 14h à 17h30</mediatheques-gps-nov2020:horaires_special_confinement>
+        <mediatheques-gps-nov2020:nom_de_l_etablissement>George Sand</mediatheques-gps-nov2020:nom_de_l_etablissement>
+        <mediatheques-gps-nov2020:reseaux_sociaux>Facebook : https://www.facebook.com/Médiathèque-George-Sand-Cesson + Portail : http://mediatheque.ville-cesson.fr/search.php?action=Accueil</mediatheques-gps-nov2020:reseaux_sociaux>
+    </rdf:Description>
+
+
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,299 @@
+@prefix ns1: <https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/9878b02b2d835967ea153bc302c342ba994c4fc3/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "Place du 14 juillet 1789"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "via le portail, par mail, et par téléphone"^^xsd:string ;
+    ns1:codeinsee "77296"^^xsd:int ;
+    ns1:commune "Moissy-Cramayel"^^xsd:string ;
+    ns1:contact "01 64 88 17 40"^^xsd:string ;
+    ns1:courriel "mediatheque.moissycramayel@grandparissud.fr"^^xsd:string ;
+    ns1:geopoint "48.628146,2.58991"^^xsd:string ;
+    ns1:horaires_special_confinement "Guichet retrait Clic & Collecte Mardi, Mercredi, Vendredi, Samedi, de 14h00 à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Média-ludothèque La Rotonde"^^xsd:string ;
+    ns1:reseaux_sociaux "pas de réseaux sociaux, un portail : http://www.mediatheque-moissycramayel.eu/"^^xsd:string .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/a55e0c4c28f286b1f899fb6ae3a4a1215a473ef8/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "1-3 place Paul Desphelipon"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "Via le portail et par téléphone"^^xsd:string ;
+    ns1:codeinsee "77445"^^xsd:int ;
+    ns1:commune "Savigny-le-Temple"^^xsd:string ;
+    ns1:contact "01 64 79 61 70"^^xsd:string ;
+    ns1:courriel "mediatheque.savignyletemple@grandparissud.fr"^^xsd:string ;
+    ns1:geopoint "48.581685,2.582766"^^xsd:string ;
+    ns1:horaires_special_confinement "mardi, mercredi, vendredi et samedi de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "des Cités Unies"^^xsd:string ;
+    ns1:reseaux_sociaux "Portail : http://www.mediatheques-savigny-le-temple.fr/"^^xsd:string .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/dd4fe8e4a138a9bc2775ac0655b435b60911a262/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "1 rue de la Plaine"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "Ouvert au public, par téléphone"^^xsd:string ;
+    ns1:codeinsee "91286"^^xsd:int ;
+    ns1:commentaire "sacs surprises composés par les médiathécaires, pour tous les âges"^^xsd:string ;
+    ns1:commune "Grigny"^^xsd:string ;
+    ns1:contact "01 78 84 22 22"^^xsd:string ;
+    ns1:geopoint "48.655134,2.387269"^^xsd:string ;
+    ns1:horaires_special_confinement "Ouverture les mardis, mercredis et samedis de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Victor Hugo à Grigny"^^xsd:string ;
+    ns1:reseaux_sociaux <https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls> .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/09ba2b80a522007164a131097dcb170b6eb0ee86/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "Mail de l'île de France - Long Rayage"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "Ouvert au public, par téléphone"^^xsd:string ;
+    ns1:codeinsee "91340"^^xsd:int ;
+    ns1:commune "Lisses"^^xsd:string ;
+    ns1:contact "01 69 11 48 80"^^xsd:string ;
+    ns1:geopoint "48.611697,2.417367"^^xsd:string ;
+    ns1:horaires_special_confinement "Ouverture les mardis, mercredis, vendredis, samedis de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Colette"^^xsd:string ;
+    ns1:reseaux_sociaux <https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls> .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/d3304d56916566b4725c9956885f4ba6322febe0/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "Rue du Village"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "Ouvert au public, par téléphone"^^xsd:string ;
+    ns1:codeinsee "91228"^^xsd:int ;
+    ns1:commentaire "angle avec le parc Henri Fabre"^^xsd:string ;
+    ns1:commune "Evry-Courcouronnes"^^xsd:string ;
+    ns1:contact "01 69 89 80 02"^^xsd:string ;
+    ns1:geopoint "48.631496,2.446821"^^xsd:string ;
+    ns1:horaires_special_confinement "Ouverture les mardis, mercredis, vendredis, samedis de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Camus"^^xsd:string ;
+    ns1:reseaux_sociaux <https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls> .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/5ff9e92e2da5ff7cddd19cffb0e458d9b061e241/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "8-10 rue du Marquis de Raies"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "Ouvert au public, par téléphone"^^xsd:string ;
+    ns1:codeinsee "91228"^^xsd:int ;
+    ns1:commune "Evry-Courcouronnes"^^xsd:string ;
+    ns1:contact "01 60 77 21 02"^^xsd:string ;
+    ns1:geopoint "48.629348,2.413586"^^xsd:string ;
+    ns1:horaires_special_confinement "Ouverture les mardis, mercredis, vendredis, samedis de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Perec"^^xsd:string ;
+    ns1:reseaux_sociaux <https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls> .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/46db2184bb2e4893438edd259e97d440a35efa06/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "17 rue du Château d'eau"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "Ouvert au public, par téléphone aux horaires du Clic & Collect"^^xsd:string ;
+    ns1:codeinsee "91521"^^xsd:int ;
+    ns1:commune "Ris-Orangis"^^xsd:string ;
+    ns1:contact "01 69 02 10 70"^^xsd:string ;
+    ns1:geopoint "48.650893,2.40423"^^xsd:string ;
+    ns1:horaires_special_confinement "Guichet retrait Clic & Collecte les mardis, mercredis, vendredis, samedis de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Elsa Triolet"^^xsd:string ;
+    ns1:reseaux_sociaux "Pas de réseaux sociaux un portail : 'https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls"^^xsd:string .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/0d91aebb85291f58978e3b402c2a7e400dd2ed89/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "Place Roland Vincent"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "Ouvert au public aux horaires du clic & collect, via le portail, par téléphone"^^xsd:string ;
+    ns1:codeinsee "91659"^^xsd:int ;
+    ns1:commune "Villabé"^^xsd:string ;
+    ns1:contact "01 60 86 03 06"^^xsd:string ;
+    ns1:courriel "mediatheque.ramey@grandparissud.fr"^^xsd:string ;
+    ns1:geopoint "48.587824,2.455715"^^xsd:string ;
+    ns1:horaires_special_confinement "mardi, mercredi, vendredi et samedi de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Alain Ramey"^^xsd:string ;
+    ns1:reseaux_sociaux <https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls> .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/ec26bd5ead1c40f33e860ea04abd6d9a9493093f/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "rue Jean-François Millet"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "Via liens sac ad hoc et réservation par télephone"^^xsd:string ;
+    ns1:codeinsee "77122"^^xsd:int ;
+    ns1:commune "Combs-la-Ville"^^xsd:string ;
+    ns1:contact "01 64 88 61 53"^^xsd:string ;
+    ns1:courriel "mediathque.combs@grandparissud.fr"^^xsd:string ;
+    ns1:geopoint "48.659337,2.565087"^^xsd:string ;
+    ns1:horaires_special_confinement "mardi, mercredi, vendredi et samedi de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Média-ludothèque Combs-la-Ville"^^xsd:string .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/35bc95d26fef7ff30dcbcf38ff09485e73811141/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "1 rue de la Poste"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "Ouvert au public, par téléphone"^^xsd:string ;
+    ns1:codeinsee "91086"^^xsd:int ;
+    ns1:commune "Bondoufle"^^xsd:string ;
+    ns1:contact "01 60 86 44 01"^^xsd:string ;
+    ns1:courriel "m.cavanna@grandparissud.fr, c.mangin@grandparissud.fr"^^xsd:string ;
+    ns1:geopoint "48.613707,2.377475"^^xsd:string ;
+    ns1:horaires_special_confinement "Ouverture les mercredis et vendredis de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Condorcet"^^xsd:string ;
+    ns1:reseaux_sociaux <https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls> .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/3012979c48cfd34c96808d4d7403daf5d80512ff/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "109 place de l'Agora"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "Ouvert au public, par téléphone"^^xsd:string ;
+    ns1:codeinsee "91228"^^xsd:int ;
+    ns1:commune "Evry-Courcouronnes"^^xsd:string ;
+    ns1:contact "01 69 91 59 59"^^xsd:string ;
+    ns1:geopoint "48.629082,2.429546"^^xsd:string ;
+    ns1:horaires_special_confinement "Ouverture les mardis, mercredis, vendredis, samedis de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "de l'Agora"^^xsd:string ;
+    ns1:reseaux_sociaux <https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls> .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/08946e39e6075d40adf420e00cb075e29c4bf76c/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "11 place Condorcet"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:codeinsee "77495"^^xsd:int ;
+    ns1:commune "Vert-Saint-Denis"^^xsd:string ;
+    ns1:contact "01 64 87 65 76 ou 01 64 87 65 77 (pendant fermeture)"^^xsd:string ;
+    ns1:courriel "medialudo.vertsaintdenis@grandparissud.fr"^^xsd:string ;
+    ns1:geopoint "48.563652,2.615733"^^xsd:string ;
+    ns1:horaires_special_confinement "Fermerture provisoire cause incendie"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Médialudo Gérard Philipe"^^xsd:string ;
+    ns1:reseaux_sociaux "Facebook : https://www.facebook.com/Médialudo-de-Vert-Saint-Denis / Portail : https://medialudo-vert-saint-denis.bibli.fr/"^^xsd:string .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/d5cdf342e3a7480a52cab73273475cc7761a223b/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "23 bis avenue des Sablons"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "Ouvert au public, par téléphone"^^xsd:string ;
+    ns1:codeinsee "91286"^^xsd:int ;
+    ns1:commentaire "sacs surprises composés par les médiathécaires, pour tous les âges"^^xsd:string ;
+    ns1:commune "Grigny"^^xsd:string ;
+    ns1:contact "01 78 84 22 23"^^xsd:string ;
+    ns1:geopoint "48.65528,2.390325"^^xsd:string ;
+    ns1:horaires_special_confinement "Ouverture les mercredis, vendredis et samedis de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Pablo Picasso"^^xsd:string ;
+    ns1:reseaux_sociaux <https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls> .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/64935c96d46a86967d7363cf6de2e8bf664a2040/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "86 rue de Paris"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "via le portail, par mail, et par téléphone"^^xsd:string ;
+    ns1:codeinsee "77251"^^xsd:int ;
+    ns1:commune "Lieusaint"^^xsd:string ;
+    ns1:contact "01 64 13 33 90"^^xsd:string ;
+    ns1:courriel "mediatheque.lieusaint@grandparissud.fr"^^xsd:string ;
+    ns1:geopoint "48.630087,2.553968"^^xsd:string ;
+    ns1:horaires_special_confinement "Guichet retrait Clic & Collecte Mardi, Mercredi, Vendredi, Samedi, de 14h00 à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Côté Cour"^^xsd:string ;
+    ns1:reseaux_sociaux "pas de réseaux sociaux, un portail : http://lieusaint.e-sezhame.fr/"^^xsd:string .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/653560f63ecf9a5a2b3da4559d4a74282b84ce63/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "5 rue du 8 Mai 1945"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "Ouvert au public, par téléphone aux horaires du Clic & Collect"^^xsd:string ;
+    ns1:codeinsee "91521"^^xsd:int ;
+    ns1:commune "Ris-Orangis"^^xsd:string ;
+    ns1:contact "01 69 43 86 90"^^xsd:string ;
+    ns1:geopoint "48.656803,2.410889"^^xsd:string ;
+    ns1:horaires_special_confinement "Guichet retrait Clic & Collecte les mercredis, samedis de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Raymond Queneau"^^xsd:string ;
+    ns1:reseaux_sociaux "Pas de réseaux sociaux un portail https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls"^^xsd:string .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/15f4d7929ab60208657812d1248c41fcdb986bc9/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "41 avenue Charles de Gaulle"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "Ouvert au public aux horaires du clic & collect, via le portail, par téléphone"^^xsd:string ;
+    ns1:codeinsee "91179"^^xsd:int ;
+    ns1:commentaire "dans le  C.C Les Terrasses"^^xsd:string ;
+    ns1:commune "Le Coudray Montceaux"^^xsd:string ;
+    ns1:contact "01 60 77 03 47"^^xsd:string ;
+    ns1:courriel "mediathequelcm@grandparissud.fr"^^xsd:string ;
+    ns1:geopoint "48.565285,2.486286"^^xsd:string ;
+    ns1:horaires_special_confinement "mardi, mercredi, vendredi et samedi de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Média-ludothèque La Belle Gabrielle"^^xsd:string ;
+    ns1:reseaux_sociaux <https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls> .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/77f1776679737b105b66cc58999b8600dbe6111b/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "1 rue Neuve"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "via le portail, par mail, et par téléphone"^^xsd:string ;
+    ns1:codeinsee "77326"^^xsd:int ;
+    ns1:commune "Nandy"^^xsd:string ;
+    ns1:contact "01 60 63 36 23"^^xsd:string ;
+    ns1:courriel "bibliotheque.nandy@grandparissud.fr"^^xsd:string ;
+    ns1:geopoint "48.579752,2.565055"^^xsd:string ;
+    ns1:horaires_special_confinement "Guichet retrait Clic & Collecte Mardi, Mercredi, Vendredi, Samedi, de 14h00 à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Bibliothèque Marguerite Yourcenar"^^xsd:string ;
+    ns1:reseaux_sociaux "pas de réseaux sociaux, un portail : http://www.mediatheque-nandy.fr"^^xsd:string .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/75245278c0f808f80314aee92612c937384c8442/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "4 place du Miroir d'eau"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "Via le portail et par téléphone"^^xsd:string ;
+    ns1:codeinsee "77445"^^xsd:int ;
+    ns1:commune "Savigny-le-Temple"^^xsd:string ;
+    ns1:contact "01 64 79 61 70"^^xsd:string ;
+    ns1:courriel "mediatheque.savignyletemple@grandparissud.fr"^^xsd:string ;
+    ns1:geopoint "48.602178,2.567038"^^xsd:string ;
+    ns1:horaires_special_confinement "mercredi et samedi de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Jacques Prévert"^^xsd:string ;
+    ns1:reseaux_sociaux "Portail : http://www.mediatheques-savigny-le-temple.fr/"^^xsd:string .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/a1c6df0cb3c878965fa5c7b33902a93f6be90557/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "Place de l'Europe"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "Ouvert au public aux horaires du clic & collect, via le portail https://stgermainlescorbeil.bibenligne.fr/, par téléphone"^^xsd:string ;
+    ns1:codeinsee "91553"^^xsd:int ;
+    ns1:commentaire "adresse précise : 1 place Victor Hugo"^^xsd:string ;
+    ns1:commune "Saint-Germain-lès-Corbeil"^^xsd:string ;
+    ns1:contact "01 60 75 08 15"^^xsd:string ;
+    ns1:courriel "media.sglc@grandparissud.fr"^^xsd:string ;
+    ns1:geopoint "48.620372,2.492423"^^xsd:string ;
+    ns1:horaires_special_confinement "mardi, mercredi, vendredi et samedi de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "Victor Hugo à SGLC"^^xsd:string ;
+    ns1:reseaux_sociaux <https://reseaumediatheques91.grandparissud.fr/iguana/www.main.cls> .
+
+
+
+<https://data.grandparissud.fr/ld/resources/mediatheques-gps-nov2020/mediatheques-gps-nov2020-record/9e0b418ed86de6c830ee7d64adc27a024358471d/> a ns1:mediatheques-gps-nov2020-record ;
+    ns1:adresse "1 rue du Châtelet"^^xsd:string ;
+    ns1:categorie "Médiathèque"^^xsd:string ;
+    ns1:click_collect "via le portail, par mail, et par téléphone"^^xsd:string ;
+    ns1:codeinsee "77067"^^xsd:int ;
+    ns1:commune "Cesson"^^xsd:string ;
+    ns1:contact "01 60 63 57 14"^^xsd:string ;
+    ns1:courriel "mediatheque.cesson@grandparissud.fr"^^xsd:string ;
+    ns1:geopoint "48.565592,2.603529"^^xsd:string ;
+    ns1:horaires_special_confinement "mardi, mercredi, vendredi et samedi de 14h à 17h30"^^xsd:string ;
+    ns1:nom_de_l_etablissement "George Sand"^^xsd:string ;
+    ns1:reseaux_sociaux "Facebook : https://www.facebook.com/Médiathèque-George-Sand-Cesson + Portail : http://mediatheque.ville-cesson.fr/search.php?action=Accueil"^^xsd:string .
+

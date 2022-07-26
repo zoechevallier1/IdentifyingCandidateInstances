@@ -1,0 +1,614 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#"
+     xml:base="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#csp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#csp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Segment_i"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#CSP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#estDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#estDans">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Ville"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Pole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#estGerePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#estGerePar">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Ligne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#ModaliteTransport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#estRattacheA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#estRattacheA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Ville"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#IRIS"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#genre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#genre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Segment_i"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#horaires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#horaires">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Mediatheque"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Horaire"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#iris -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#iris">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Presence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#IRIS"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#pourPole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#pourPole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#HoraireSouhaite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Pole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#presence_csp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#presence_csp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Presence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#CSP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#presence_genre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#presence_genre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Presence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#proximiteArret -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#proximiteArret">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Mediatheque"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Arret"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#proximiteParking -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#proximiteParking">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Mediatheque"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Parking"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#sArreteA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#sArreteA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Ligne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Arret"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#seSitue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#seSitue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Mediatheque"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Ville"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#trancheHoraire -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#trancheHoraire">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#HoraireSouhaite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Horaire"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#ville -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#ville">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Segment_i"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Ville"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#adresse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#adresse">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Mediatheque"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#age_max -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#age_max">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Segment_i"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#age_min -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#age_min">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Segment_i"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#annee -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#annee">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Segment_i"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#automate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#automate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Mediatheque"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#codeINSEE -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#codeINSEE">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Ville"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#csp_label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#csp_label">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#CSP"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#debut_observation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#debut_observation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Presence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#effectif -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#effectif">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Segment_i"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#effectifSeuil -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#effectifSeuil">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Mediatheque"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#fin_observation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#fin_observation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Presence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#genre_label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#genre_label">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Genre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#heure_debut -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#heure_debut">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Horaire"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#heure_fin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#heure_fin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Horaire"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#jour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#jour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Horaire"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#label">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#ModaliteTransport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#latitude_arret -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#latitude_arret">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Arret"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#latitude_mediatheque -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#latitude_mediatheque">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Mediatheque"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#latitude_parking -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#latitude_parking">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Parking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#longitude_arret -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#longitude_arret">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Arret"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#longitude_mediatheque -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#longitude_mediatheque">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Mediatheque"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#longitude_parking -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#longitude_parking">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Parking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_arret -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_arret">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Arret"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_iris -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_iris">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#IRIS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_ligne -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_ligne">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Ligne"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_mediatheque -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_mediatheque">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Mediatheque"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_parking -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_parking">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Parking"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_pole -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_pole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Pole"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_ville -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_ville">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Ville"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#HoraireSouhaite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#p_age_max -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#p_age_max">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Presence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#p_age_min -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#p_age_min">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Presence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#presence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#presence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Presence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#superficie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#superficie">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Mediatheque"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Arret -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Arret"/>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#CSP -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#CSP"/>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Horaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Horaire"/>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#HoraireSouhaite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#HoraireSouhaite"/>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#IRIS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#IRIS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Ligne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Ligne"/>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Mediatheque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Mediatheque"/>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#ModaliteTransport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#ModaliteTransport"/>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Parking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Parking"/>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Pole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Pole"/>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Presence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Presence"/>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Segment_i -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Segment_i"/>
+    
+
+
+    <!-- http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Ville -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#Ville"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+   
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

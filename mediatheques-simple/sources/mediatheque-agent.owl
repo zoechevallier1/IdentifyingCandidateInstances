@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+	 xmlns="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#"
+     xml:base="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:mediatheque-agent="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#">
+    <owl:Ontology rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#nom">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Mediatheque"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+	
+	<owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#prenom">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+	
+	<owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#nom_famille">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+	
+	<owl:ObjectProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#travailleA">
+		<rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Agent"/>
+		<rdfs:range rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Mediatheque"/>
+	</owl:ObjectProperty>
+    
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#mediatheque-gps-nov2020-record -->
+
+    <owl:Class rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Mediatheque"/>
+	<owl:Class rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Agent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#9878b02b2d835967ea153bc302c342ba994c4fc3 -->
+
+    <rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#medA">
+		<rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Mediatheque" />
+        <mediatheque-agent:nom>Agora</mediatheque-agent:nom>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#medRQ">
+		<rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Mediatheque" />
+        <mediatheque-agent:nom>Raymond Queneau</mediatheque-agent:nom>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#agFC">
+		<rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Agent" />
+        <mediatheque-agent:prenom>Frédéric</mediatheque-agent:prenom>
+        <mediatheque-agent:nom_famille>Chaillan</mediatheque-agent:nom_famille>
+        <mediatheque-agent:travailleA rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#medA" />
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#agZK">
+		<rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Agent" />
+        <mediatheque-agent:prenom>Zoubida</mediatheque-agent:prenom>
+        <mediatheque-agent:nom_famille>Kedad</mediatheque-agent:nom_famille>
+        <mediatheque-agent:travailleA rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#medRQ" />
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#agBF">
+		<rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Agent" />
+        <mediatheque-agent:prenom>Béatrice</mediatheque-agent:prenom>
+        <mediatheque-agent:nom_famille>Finance</mediatheque-agent:nom_famille>
+        <mediatheque-agent:travailleA rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#medRQ" />
+    </rdf:Description>
+	
+	
+
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

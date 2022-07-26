@@ -1,0 +1,9 @@
+<rdf:RDF>
+  <Matching>
+
+	<Config>
+		<source>ecoles.owl</source>
+	</Config>
+
+  </Matching>
+</rdf:RDF>

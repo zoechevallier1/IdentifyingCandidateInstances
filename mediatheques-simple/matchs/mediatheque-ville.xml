@@ -1,0 +1,37 @@
+<rdf:RDF>
+  <Matching>
+
+	<Config>
+		<source>mediatheque-ville.owl</source>
+	</Config>
+	
+	<match>
+		<classeSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-ville#Ville</classeSource>
+		<propSource></propSource>
+		<classeCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#Ville</classeCible>
+		<propCible></propCible>
+	</match>
+
+	<match>
+		<classeSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-ville#Mediatheque</classeSource>
+		<propSource></propSource>
+		<classeCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#Mediatheque</classeCible>
+		<propCible></propCible>
+	</match>
+	
+	<match>
+		<classeSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-ville#Ville</classeSource>
+		<propSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-ville#nom_ville</propSource>
+		<classeCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#Ville</classeCible>
+		<propCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#nom_ville</propCible>
+	</match>
+	
+	<match>
+		<classeSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-ville#Mediatheque</classeSource>
+		<propSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-ville#nom_mediatheque</propSource>
+		<classeCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#Mediatheque</classeCible>
+		<propCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#nom_mediatheque</propCible>
+	</match>
+
+  </Matching>
+</rdf:RDF>

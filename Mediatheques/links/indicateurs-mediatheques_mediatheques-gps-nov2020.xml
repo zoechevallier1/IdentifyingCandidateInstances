@@ -1,0 +1,212 @@
+<rdf:RDF xmlns:align="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#">
+  <Alignment>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#ec26bd5ead1c40f33e860ea04abd6d9a9493093f"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#66327d42400dfb10fab838cf37e4ce1ffc03c4a6"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#dd4fe8e4a138a9bc2775ac0655b435b60911a262"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#1ffb40866dbf2d19f335076e31424870bcc2801e"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#64935c96d46a86967d7363cf6de2e8bf664a2040"></entity2>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#5d8cceddb43d9859422fc17347c02c322282bc50"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#35bc95d26fef7ff30dcbcf38ff09485e73811141"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#35360e14d9c23722253f81615a78ea865e4ffb48"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#653560f63ecf9a5a2b3da4559d4a74282b84ce63"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#e706f330b07576fe3b818ddcaef872bb5aa73def"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#46db2184bb2e4893438edd259e97d440a35efa06"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#9dc03a915117930334239ceaf28c0e29344582ca"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#08946e39e6075d40adf420e00cb075e29c4bf76c"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#2396824f5a3f6b8f5768170fbdc6f43c67a28de8"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#9e0b418ed86de6c830ee7d64adc27a024358471d"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#44f608e7d49c2e01d5887e087d177a7d8bac1b2c"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#0d91aebb85291f58978e3b402c2a7e400dd2ed89"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#9fa14e8fde8f132bf74245e20d9f55785816fb22"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#77f1776679737b105b66cc58999b8600dbe6111b"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#3cc642242eb38274064b1045032e85efae256b36"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#a1c6df0cb3c878965fa5c7b33902a93f6be90557"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#8f1b60184ba551c75c767cbad23d04b455fbb670"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#3012979c48cfd34c96808d4d7403daf5d80512ff"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#84a2e0511aed01932d837770c4b0c18c393d39cf"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#15f4d7929ab60208657812d1248c41fcdb986bc9"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#08babdedb0bf155df3207eaf8d83ce5112f3db3d"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#d5cdf342e3a7480a52cab73273475cc7761a223b"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#7c5ef1bc150e27c5d9b6e85802f0fcbbaa91b5af"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#5ff9e92e2da5ff7cddd19cffb0e458d9b061e241"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#f2de3d170674eb3ad2bd9af7393535db79d70c87"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#09ba2b80a522007164a131097dcb170b6eb0ee86"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#3502831375b1b4771bd01a94ef5fdf92936ee06f"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#d3304d56916566b4725c9956885f4ba6322febe0"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#a3a211c1bb47fb9e58fe0504ed767a1ab23fe0de"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>czds
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#9878b02b2d835967ea153bc302c342ba994c4fc3"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#e523b95820044661df215b12eb75af909fb756cd"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#a55e0c4c28f286b1f899fb6ae3a4a1215a473ef8"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#16cd35e4a7810396d4464c2bc91e8ec8dfb33047"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#75245278c0f808f80314aee92612c937384c8442"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#a75762195764c271567e730431b8ed595467be11"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#75245278c0f808f80314aee92612c937384c8442"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#2396824f5a3f6b8f5768170fbdc6f43c67a28de8"/>
+        <relation>!=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#dd4fe8e4a138a9bc2775ac0655b435b60911a262"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#8f1b60184ba551c75c767cbad23d04b455fbb670"/>
+        <relation>!=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#9e0b418ed86de6c830ee7d64adc27a024358471d"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#f2de3d170674eb3ad2bd9af7393535db79d70c87"/>
+        <relation>!=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#a1c6df0cb3c878965fa5c7b33902a93f6be90557"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#1ffb40866dbf2d19f335076e31424870bcc2801e"/>
+        <relation>!=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#9878b02b2d835967ea153bc302c342ba994c4fc3"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#7484a9fc5629ddca5ec2e80eb809b65cf86e246f"/>
+        <relation>!=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    <map>
+      <Cell>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020#653560f63ecf9a5a2b3da4559d4a74282b84ce63"/>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#08babdedb0bf155df3207eaf8d83ce5112f3db3d"/>
+        <relation>!=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+  </Alignment>
+</rdf:RDF>

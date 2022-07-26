@@ -1,0 +1,51 @@
+<rdf:RDF>
+  <Matching>
+
+	<Config>
+		<source>mediatheque-agent.owl</source>
+	</Config>
+	
+	<match>
+		<classeSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Mediatheque</classeSource>
+		<propSource></propSource>
+		<classeCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#Mediatheque</classeCible>
+		<propCible></propCible>
+	</match>
+
+	<match>
+		<classeSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Agent</classeSource>
+		<propSource></propSource>
+		<classeCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#Agent</classeCible>
+		<propCible></propCible>
+	</match>
+	
+	<match>
+		<classeSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Mediatheque</classeSource>
+		<propSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#nom</propSource>
+		<classeCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#Mediatheque</classeCible>
+		<propCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#nom_mediatheque</propCible>
+	</match>
+	
+	<match>
+		<classeSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Agent</classeSource>
+		<propSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#prenom</propSource>
+		<classeCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#Agent</classeCible>
+		<propCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#prenom_agent</propCible>
+	</match>
+
+	<match>
+		<classeSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Agent</classeSource>
+		<propSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#nom_famille</propSource>
+		<classeCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#Agent</classeCible>
+		<propCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#nom_agent</propCible>
+	</match>
+
+	<match>
+		<classeSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#Agent</classeSource>
+		<propSource>https://data.grandparissud.fr/ld/ontologies/mediatheque-agent#travailleA</propSource>
+		<classeCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#Agent</classeCible>
+		<propCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#travailleAc</propCible>
+	</match>
+
+  </Matching>
+</rdf:RDF>

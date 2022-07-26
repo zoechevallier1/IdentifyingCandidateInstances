@@ -1,0 +1,30 @@
+<rdf:RDF>
+  <Matching>
+
+	<Config>
+		<source>ville.owl</source>
+	</Config>
+	
+	<match>
+		<classeSource>https://data.grandparissud.fr/ld/ontologies/ville#Ville</classeSource>
+		<propSource></propSource>
+		<classeCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#Ville</classeCible>
+		<propCible></propCible>
+	</match>
+	
+	<match>
+		<classeSource>https://data.grandparissud.fr/ld/ontologies/ville#Ville</classeSource>
+		<propSource>https://data.grandparissud.fr/ld/ontologies/ville#nom</propSource>
+		<classeCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#Ville</classeCible>
+		<propCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#nom_ville</propCible>
+	</match>
+	
+	<match>
+		<classeSource>https://data.grandparissud.fr/ld/ontologies/ville#Ville</classeSource>
+		<propSource>https://data.grandparissud.fr/ld/ontologies/ville#codeINSEE</propSource>
+		<classeCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#Ville</classeCible>
+		<propCible>http://www.semanticweb.org/schema-cible-mediatheques-simple#codeINSEE</propCible>
+	</match>
+
+  </Matching>
+</rdf:RDF>

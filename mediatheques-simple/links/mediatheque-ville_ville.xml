@@ -1,0 +1,13 @@
+<rdf:RDF xmlns:align="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#">
+  <Alignment>
+    <map>
+      <Cell>
+        <entity1 rdf:resource="https://data.grandparissud.fr/ld/ontologies/mediatheque-ville#villeRO"/>
+        <entity2 rdf:resource="https://data.grandparissud.fr/ld/ontologies/ville#RO"/>
+        <relation>=</relation>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</measure>
+      </Cell>
+    </map>
+    
+  </Alignment>
+</rdf:RDF>

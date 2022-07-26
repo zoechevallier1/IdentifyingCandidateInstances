@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+	 xmlns="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#"
+     xml:base="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:indicateurs-mediatheques="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#">
+    <owl:Ontology rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+   
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#bibliotheque_mediatheque_ludotheque">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#nombre_d_etp_vacants">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#nombre_d_heures_d_ouverture_hebdo">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#nombre_de_prets_2019">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#nombre_de_salaries_actuel">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#pole">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#presence_d_automates_de_pret_retour_oui_ou_non">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#superficie_actuelle">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <owl:DatatypeProperty rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#temps_passe_en_service_public">
+        <rdfs:domain rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques -->
+
+    <owl:Class rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#9878b02b2d835967ea153bc302c342ba994c4fc3 -->
+
+    <rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#e706f330b07576fe3b818ddcaef872bb5aa73def">
+		<rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Raymond Queneau, Ris-Orangis</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_etp_vacants>1e+00</indicateurs-mediatheques:nombre_d_etp_vacants>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2.25e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>2.6057e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>1e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>3e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>oui, 1 déplacement d'1 prévu à Triolet pendant déconfinement n°1</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>256 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>en cours</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#1d27e9f5569226c9326939290f248110d45dcc34">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>La Rotonde, Moissy-Cramayel</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_etp_vacants>5e+00</indicateurs-mediatheques:nombre_d_etp_vacants>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2.45e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>7.4287e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>3e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>1e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>1587 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>en cours</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#2396824f5a3f6b8f5768170fbdc6f43c67a28de8">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Gérard Philippe, Vert-Saint-Denis</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2.2e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>3.0851e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>5e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>2e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>627 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>0.37</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#7c5ef1bc150e27c5d9b6e85802f0fcbbaa91b5af">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Pablo Picasso, Grigny</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>8e+00</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>1.3147e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:pole>3e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>245 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>en cours</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#08babdedb0bf155df3207eaf8d83ce5112f3db3d">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>La Belle Gabrielle, le Coudray-Montceaux</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>1.8e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>8.336e+03</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>3e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>5e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>360 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>en cours</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#1ffb40866dbf2d19f335076e31424870bcc2801e">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Victor Hugo, Grigny</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_etp_vacants>3e+00</indicateurs-mediatheques:nombre_d_etp_vacants>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>1.5e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>1.5264e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>9e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>3e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>800 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>en cours</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#a3a211c1bb47fb9e58fe0504ed767a1ab23fe0de">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Albert Camus, Évry-Courcouronnes</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_etp_vacants>2e+00</indicateurs-mediatheques:nombre_d_etp_vacants>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2.7e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>7.5837e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>4e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>4e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>oui</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>690 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>en cours</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#46a5339c46b90d4a1e38a3483b06012df0f3f9c4">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Aunettes, Évry-Courcouronnes</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>1.1013e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>2e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>4e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>150 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>en cours</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#e523b95820044661df215b12eb75af909fb756cd">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Ludothèque, Moissy-Cramayel</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_etp_vacants>1e+00</indicateurs-mediatheques:nombre_d_etp_vacants>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>1.7e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>2.83e+03</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>2e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>1e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>1587 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>en cours</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+	
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#3cc642242eb38274064b1045032e85efae256b36">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Marguerite Yourcenar, Nandy</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_etp_vacants>8e-01</indicateurs-mediatheques:nombre_d_etp_vacants>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>1.9e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>2.0807e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>3e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>2e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>550 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>0.33</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#a75762195764c271567e730431b8ed595467be11">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Jacques Prévert, Savigny-le-Temple</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>1.3e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>1.7626e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:pole>2e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>780 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>0.38</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+
+<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#9dc03a915117930334239ceaf28c0e29344582ca">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Elsa Triolet, Ris-Orangis</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_etp_vacants>1e+00</indicateurs-mediatheques:nombre_d_etp_vacants>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2.6e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>4.587e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>5e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>3e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>oui, 2</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>509 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>en cours</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+
+<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#35360e14d9c23722253f81615a78ea865e4ffb48">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Condorcet, Bondoufle</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2.2e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>3.0366e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>2e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>3e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>100 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>0.59</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#84a2e0511aed01932d837770c4b0c18c393d39cf">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Agora, Évry-Courcouronnes</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_etp_vacants>4e+00</indicateurs-mediatheques:nombre_d_etp_vacants>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>3.35e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>1.405e+05</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>1.8e+01</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>4e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>oui</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>2575 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>0.44</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#f2de3d170674eb3ad2bd9af7393535db79d70c87">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Georges Perec, Évry-Courcouronnes</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2.1e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>2.0358e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>2e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>4e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>300 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>en cours</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#5d8cceddb43d9859422fc17347c02c322282bc50">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Côté Cour, Lieusaint</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_etp_vacants>2e+00</indicateurs-mediatheques:nombre_d_etp_vacants>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>3.5613e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>7e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>1e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>847 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>en cours</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#66327d42400dfb10fab838cf37e4ce1ffc03c4a6">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>La Coupole, Combs-la-Ville</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_etp_vacants>1e+00</indicateurs-mediatheques:nombre_d_etp_vacants>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2.35e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>5.4267e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>1e+01</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>1e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>1029 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>en cours</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#44f608e7d49c2e01d5887e087d177a7d8bac1b2c">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Georges Sand, Cesson</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_etp_vacants>6e-01</indicateurs-mediatheques:nombre_d_etp_vacants>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>3.2816e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>4e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>2e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>245 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>0.42</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#16cd35e4a7810396d4464c2bc91e8ec8dfb33047">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Cités Unies, Savigny-le-Temple</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_etp_vacants>2.5e+00</indicateurs-mediatheques:nombre_d_etp_vacants>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2.2e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>6.6234e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>1.5e+01</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>2e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>1754 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>0.38</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#7484a9fc5629ddca5ec2e80eb809b65cf86e246f">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Ludothèque, Vert-Saint-Denis</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_etp_vacants>1e+00</indicateurs-mediatheques:nombre_d_etp_vacants>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2.4e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>2.438e+03</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>2e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>2e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>627 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>0.37</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#3502831375b1b4771bd01a94ef5fdf92936ee06f">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Colette, Lisses</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2.7e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>6.0944e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>6e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>5e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>oui</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>734 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>0.51</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#9fa14e8fde8f132bf74245e20d9f55785816fb22">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Alain Ramey, Villabé</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2.2e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>2.507e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>2e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>5e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>410 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>en cours</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+
+	
+	<rdf:Description rdf:about="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#8f1b60184ba551c75c767cbad23d04b455fbb670">
+        <rdf:type rdf:resource="https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques#indicateurs-mediatheques-record" />
+        <indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>Victor Hugo, Saint-Germain-les-Corbeil</indicateurs-mediatheques:bibliotheque_mediatheque_ludotheque>
+        <indicateurs-mediatheques:nombre_d_etp_vacants>1e+00</indicateurs-mediatheques:nombre_d_etp_vacants>
+        <indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>2e+01</indicateurs-mediatheques:nombre_d_heures_d_ouverture_hebdo>
+        <indicateurs-mediatheques:nombre_de_prets_2019>2.8273e+04</indicateurs-mediatheques:nombre_de_prets_2019>
+        <indicateurs-mediatheques:nombre_de_salaries_actuel>4e+00</indicateurs-mediatheques:nombre_de_salaries_actuel>
+        <indicateurs-mediatheques:pole>5e+00</indicateurs-mediatheques:pole>
+        <indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>non</indicateurs-mediatheques:presence_d_automates_de_pret_retour_oui_ou_non>
+        <indicateurs-mediatheques:superficie_actuelle>559 m2</indicateurs-mediatheques:superficie_actuelle>
+        <indicateurs-mediatheques:temps_passe_en_service_public>en cours</indicateurs-mediatheques:temps_passe_en_service_public>
+    </rdf:Description>
+	
+	
+	
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
