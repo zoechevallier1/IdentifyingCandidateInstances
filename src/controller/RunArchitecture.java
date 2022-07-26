@@ -32,7 +32,6 @@ import java.util.ArrayList;
 public class RunArchitecture {
 
     private ProjectManager projectManager;
-
     private ArrayList<SchemaMatchs> matchs;
     private ArrayList<Source> sourcesAlreadyMatched = new ArrayList<Source>();
     private ArrayList<InstancesMatchs> links;
@@ -58,16 +57,6 @@ public class RunArchitecture {
         Source source = projectManager.getSourceByName(sourceName);
         ArrayList<Match> matchs = new ArrayList<Match>();
         Match match;
-
-        if (sourceName.equals("")){
-
-            match = new Match("", "", "", "");
-            matchs.add(match);
-            match = new Match("", "", "", "");
-            matchs.add(match);
-
-        }
-
 
         File matchingFile = new File(projectManager.getProjectDirectory().getAbsolutePath()+"/matchs/"+sourceName.split("\\.")[0]+".xml");
 
@@ -217,16 +206,25 @@ public class RunArchitecture {
     }
 
     public void linking(String source1, String source2){
+        Source s1, s2;
         File links = null;
+        s1 = projectManager.getSourceByName(source1);
+        s2 = projectManager.getSourceByName(source2);
         try {
-            links = new File(projectManager.getProjectDirectory().getAbsolutePath()+"/links/"+source1.split("\\.")[0]+"_"+source2.split("\\.")[0]+".xml");
+
+            links = new File(projectManager.getProjectDirectory().getAbsolutePath()+"/links/"+s1.getName().split("\\.")[0]+"_"+s2.getName().split("\\.")[0]+".xml");
+            if (!links.exists()){
+                s1 = projectManager.getSourceByName(source2);
+                s2 = projectManager.getSourceByName(source1);
+                links = new File(projectManager.getProjectDirectory().getAbsolutePath()+"/links/"+source2.split("\\.")[0]+"_"+source1.split("\\.")[0]+".xml");
+            }
         } catch (Exception e){
 
         }
+        System.out.println(s1.getName());
+        System.out.println("fichier liens : " + links);
 
-        InstancesMatchs instancesMatchs = new InstancesMatchs(links, projectManager.getSourceByName(source1), projectManager.getSourceByName(source2));
-        Source s1 = instancesMatchs.getSource1();
-        Source s2 = instancesMatchs.getSource2();
+        InstancesMatchs instancesMatchs = new InstancesMatchs(links, s1, s2);
 
         for (InstancesMatchs matchs : this.links){
             if (matchs.getSource1().equals(s1) && matchs.getSource2().equals(s2)){

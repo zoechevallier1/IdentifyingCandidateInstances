@@ -243,6 +243,8 @@ public class GraphVisualizationPanel extends JPanel {
                     return Color.BLUE;
                 if (i.getPredicate().getLocalName().equals(("equivalentProperty")) || i.getPredicate().getLocalName().equals("equivalentClass"))
                     return Color.YELLOW;
+                if (i.getPredicate().getLocalName().equals(("sameAs")))
+                    return Color.MAGENTA;
 
                 return Color.BLACK;
             }
@@ -261,6 +263,8 @@ public class GraphVisualizationPanel extends JPanel {
                     return Color.BLUE;
                 if (i.getPredicate().getLocalName().equals("equivalentProperty") || i.getPredicate().getLocalName().equals("equivalentClass"))
                     return Color.YELLOW;
+                if (i.getPredicate().getLocalName().equals(("sameAs")))
+                    return Color.MAGENTA;
 
                 return Color.BLACK;
             }
@@ -277,6 +281,10 @@ public class GraphVisualizationPanel extends JPanel {
                     return Color.RED;
                 if(i.getPredicate().getLocalName().equals(EdgePredicate.subClassOf.name()) )
                     return Color.BLUE;
+                if (i.getPredicate().getLocalName().equals(("equivalentProperty")) || i.getPredicate().getLocalName().equals("equivalentClass"))
+                    return Color.YELLOW;
+                if (i.getPredicate().getLocalName().equals(("sameAs")))
+                    return Color.MAGENTA;
 
                 return Color.DARK_GRAY;
             }

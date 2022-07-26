@@ -92,6 +92,10 @@ public class MainMenuBar extends JMenuBar {
         menuItem.addActionListener(this::runInstanciating);
         integrationMenu.add(menuItem);
 
+        /*menuItem = new JMenuItem("Clear");
+        menuItem.addActionListener(this::runClear);
+        integrationMenu.add(menuItem);*/
+
         add(integrationMenu);
 
     }
@@ -134,8 +138,12 @@ public class MainMenuBar extends JMenuBar {
     }
 
     public void showMappings(ActionEvent evt){
-        ShowMapping showMapping = new ShowMapping();
-        //showMapping.setVisible(true);
+        ShowMappingDialog showMappingDialog = new ShowMappingDialog();
+        showMappingDialog.setVisible(true);
+        if (showMappingDialog.getDialogResult()== JOptionPane.OK_OPTION){
+            ShowMapping showMapping = new ShowMapping(showMappingDialog.getSelectedClass());
+
+        }
 
     }
 
@@ -188,7 +196,6 @@ public class MainMenuBar extends JMenuBar {
 
 
             if (addSource.getDialogResult() == JOptionPane.OK_OPTION){
-                System.out.println("Add source");
                 DI_APP.getMainWindow().addSource(addSource.getTxtPathSource());
 
             }
