@@ -142,7 +142,7 @@ public class MainMenuBar extends JMenuBar {
         ShowMappingDialog showMappingDialog = new ShowMappingDialog();
         showMappingDialog.setVisible(true);
         if (showMappingDialog.getDialogResult()== JOptionPane.OK_OPTION){
-            System.out.println(showMappingDialog.getSelectedClass());
+            //System.out.println(showMappingDialog.getSelectedClass());
             ShowMapping showMapping = new ShowMapping(DI_APP.getMainWindow().getRunArchitecture().getMapping(showMappingDialog.getSelectedClass()));
 
         }

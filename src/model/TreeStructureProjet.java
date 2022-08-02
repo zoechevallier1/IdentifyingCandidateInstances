@@ -31,8 +31,8 @@ public class TreeStructureProjet {
         DefaultMutableTreeNode classNode;
         DefaultMutableTreeNode top = new DefaultMutableTreeNode(projectManager.getProjectName());
         DefaultMutableTreeNode targetSchemaNode = new DefaultMutableTreeNode(projectManager.getTargetSchema().getTargetSchema().getName());
-        for (String classe : projectManager.getTargetSchema().getClasses()){
-            classNode = new DefaultMutableTreeNode(classe);
+        for (Element classe : projectManager.getTargetSchema().getClasses()){
+            classNode = new DefaultMutableTreeNode(classe.getUri());
             targetSchemaNode.add(classNode);
         }
         top.add(targetSchemaNode);

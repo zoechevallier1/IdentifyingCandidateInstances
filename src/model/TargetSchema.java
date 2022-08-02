@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 public class TargetSchema {
     private File targetSchema;
+
     private Model modelTargetSchema;
     private DirectedGraph<RDFNode, Statement> graphTargetSchema;
 
@@ -58,19 +59,6 @@ public class TargetSchema {
         return count;
     }
 
-
-
-    /*public void showModel(){
-        StmtIterator x = modelTargetSchema.listStatements();
-        if (!x.hasNext()) {
-            System.out.println("...rien");
-        }
-        while (x.hasNext()) {
-            Statement sol = x.next();
-            System.out.println("..." + sol.toString());
-        }
-    }*/
-
     public void setModelTargetSchema(Model modelTargetSchema){
         this.modelTargetSchema = modelTargetSchema;
     }
@@ -79,14 +67,17 @@ public class TargetSchema {
         this.modelTargetSchema.add(subject, property, object);
     }
 
-    public ArrayList<String> getClasses(){
-        ArrayList<String> classes = new ArrayList<String>();
+    public ArrayList<Element> getClasses(){
+        ArrayList<Element> classes = new ArrayList<Element>();
+        Element element;
         String queryString = "SELECT ?c WHERE {?c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class>} GROUP BY ?c";
         Query query = QueryFactory.create(queryString);
         QueryExecution qexec = QueryExecutionFactory.create(query, this.modelTargetSchema);
         ResultSet results = qexec.execSelect();
         for ( ; results.hasNext() ;){
-            classes.add(results.nextSolution().getResource("c").toString());
+            Resource r = results.nextSolution().getResource("c");
+            element = new Element(r.toString(), r.getLocalName(), this);
+            classes.add(element);
         }
         return classes;
     }

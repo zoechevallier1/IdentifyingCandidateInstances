@@ -1,5 +1,6 @@
 package view;
 
+import model.Element;
 import model.Source;
 
 import javax.swing.*;
@@ -61,10 +62,10 @@ public class ShowMappingDialog extends JDialog {
         comboBox.setBorder(new LineBorder(new Color(0, 0, 0)));
         comboBox.setBounds(124, 48, 290, 22);
 
-        for (String className : DI_APP.getMainWindow().getRunArchitecture().getProjectManager().getTargetSchema().getClasses()){
-            comboBox.addItem(className);
+        for (Element className : DI_APP.getMainWindow().getRunArchitecture().getProjectManager().getTargetSchema().getClasses()){
+            comboBox.addItem(className.getLocalName());
             if (selectedClass == null){
-                selectedClass = className;
+                selectedClass = className.getLocalName();
             }
         }
         comboBox.addItemListener(new ItemListener() {

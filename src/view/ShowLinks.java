@@ -1,11 +1,10 @@
 package view;
 
-import model.InstanceMatch;
-import model.InstancesMatchs;
+import model.Link;
+import model.Links;
 import model.Source;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
@@ -24,9 +23,9 @@ public class ShowLinks {
     public ShowLinks(){
 
         String header[] = {"Source 1 : instances", "Source 2 : instances"};
-        ArrayList<InstancesMatchs> allSourcesLinks = DI_APP.getMainWindow().getRunArchitecture().getLinks();
+        ArrayList<Links> allSourcesLinks = DI_APP.getMainWindow().getRunArchitecture().getLinks();
         int countLinks = 0;
-        for (InstancesMatchs sourcesLinks : allSourcesLinks){
+        for (Links sourcesLinks : allSourcesLinks){
             countLinks += sourcesLinks.getLinks().size();
         }
         //Création du tableau vide
@@ -34,8 +33,8 @@ public class ShowLinks {
 
         //On ajoute les valeurs dans les cases du tableau
         int i=0;
-        for (InstancesMatchs sourcesLinks : allSourcesLinks){
-            for (InstanceMatch link : sourcesLinks.getLinks()){
+        for (Links sourcesLinks : allSourcesLinks){
+            for (Link link : sourcesLinks.getLinks()){
                 data[i][0] = link.getInstanceS1();
                 data[i][1] = link.getInstanceS2();
                 i++;

@@ -1,6 +1,5 @@
 package model;
 
-import org.apache.logging.log4j.CloseableThreadContext;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -16,26 +15,26 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class InstancesMatchs {
+public class Links {
 
-    private final File fileMatchs;
+    private final File fileSameAs;
     private final Source source1;
     private final Source source2;
 
-    private ArrayList<InstanceMatch> links = new ArrayList<InstanceMatch>();
+    private ArrayList<Link> links = new ArrayList<Link>();
 
-    public InstancesMatchs(File fileMatchs, Source source1, Source source2 ){
-        this.fileMatchs = fileMatchs;
+    public Links(File fileSameAs, Source source1, Source source2 ){
+        this.fileSameAs = fileSameAs;
         this.source1 = source1;
         this.source2 = source2;
         constructMatchs();
     }
 
     public File getFileMatchs() {
-        return fileMatchs;
+        return fileSameAs;
     }
 
-    public ArrayList<InstanceMatch> getLinks() {
+    public ArrayList<Link> getLinks() {
         return links;
     }
 
@@ -45,7 +44,7 @@ public class InstancesMatchs {
         try {
             dbf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
             DocumentBuilder db = dbf.newDocumentBuilder();
-            Document doc = db.parse(fileMatchs);
+            Document doc = db.parse(fileSameAs);
             doc.getDocumentElement().normalize();
 
             NodeList list = doc.getElementsByTagName("Cell");
@@ -63,7 +62,7 @@ public class InstancesMatchs {
                     String relation = element.getElementsByTagName("relation").item(0).getTextContent();
 
                     if (relation.equals("=")){
-                        this.links.add(new InstanceMatch(elt1, elt2, source1, source2));
+                        this.links.add(new Link(elt1, elt2));
                     }
                 }
             }

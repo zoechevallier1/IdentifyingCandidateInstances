@@ -4,23 +4,31 @@ import java.util.ArrayList;
 
 public class Mapping {
 
-    private final String targetClass;
-    private ArrayList<Source> sources;
+    private final Element targetClass;
+    private ArrayList<Element> sourcesClass;
 
-    public Mapping(String targetClass){
+    public Mapping(Element targetClass){
         this.targetClass = targetClass;
-        sources = new ArrayList<Source>();
+        sourcesClass = new ArrayList<Element>();
     }
 
-    public String getTargetClass() {
+    public Element getTargetClass() {
         return this.targetClass;
     }
 
     public ArrayList<Source> getSources() {
+        ArrayList<Source> sources = new ArrayList<Source>();
+        for (Element classSource : this.sourcesClass){
+            sources.add(classSource.getProvenance());
+        }
         return sources;
     }
 
-    public void addSource(Source source){
-        this.sources.add(source);
+    public ArrayList<Element> getSourcesClass() {
+        return sourcesClass;
+    }
+
+    public void addSource(Element source){
+        this.sourcesClass.add(source);
     }
 }

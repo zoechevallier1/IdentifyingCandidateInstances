@@ -10,15 +10,11 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-
-
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-
 import java.io.File;
 import java.io.IOException;
-
 import java.util.ArrayList;
 
 
@@ -27,7 +23,7 @@ public class RunArchitecture {
     private ProjectManager projectManager;
     private ArrayList<SchemaMatchs> matchs;
     private ArrayList<Source> sourcesAlreadyMatched = new ArrayList<Source>();
-    private ArrayList<InstancesMatchs> links;
+    private ArrayList<Links> links;
     private ArrayList<Resource> instanciate = new ArrayList<Resource>();
 
     private ArrayList<Mapping> mappings;
@@ -38,7 +34,7 @@ public class RunArchitecture {
 
         this.projectManager = projectManager;
         this.matchs = new ArrayList<SchemaMatchs>();
-        this.links = new ArrayList<InstancesMatchs>();
+        this.links = new ArrayList<Links>();
         this.mappings = new ArrayList<Mapping>();
 
     }
@@ -122,17 +118,16 @@ public class RunArchitecture {
         Mapping mapping;
         // Pour chaque couple classeCible/classeSource
         for (Resource[] r : classMatch){
-             mapping = getMapping(r[0].toString());
+             mapping = getMapping(r[0].getLocalName());
 
              if (mapping == null){
-                 mapping = new Mapping(r[0].toString());
+                 System.out.println(r[0].toString());
+                 mapping = new Mapping(new model.Element(r[0].toString(), r[0].getLocalName(), projectManager.getTargetSchema()));
              }
 
             mappings.add(mapping);
             Source source = projectManager.getSourceByResourceClass(r[1]);
-            mapping.addSource(source);
-            //System.out.println("Source que l'on regarde : " + source.getFileSource().getName());
-            //System.out.println(r[1].toString());
+            mapping.addSource(new model.Element(r[1].toString(), r[1].getLocalName(), source));
 
             // ON REGARDE TOUTES LES INSTANCES DE LA CLASSE SOURCE
             queryString = "SELECT ?s WHERE {?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <" + r[1].toString() + "> }";
@@ -225,12 +220,10 @@ public class RunArchitecture {
         } catch (Exception e){
 
         }
-        System.out.println(s1.getName());
-        System.out.println("fichier liens : " + links);
 
-        InstancesMatchs instancesMatchs = new InstancesMatchs(links, s1, s2);
+        Links instancesMatchs = new Links(links, s1, s2);
 
-        for (InstancesMatchs matchs : this.links){
+        for (Links matchs : this.links){
             if (matchs.getSource1().equals(s1) && matchs.getSource2().equals(s2)){
                 //Enlever les liens sameAs
             }
@@ -239,7 +232,7 @@ public class RunArchitecture {
         this.links.add(instancesMatchs);
 
 
-        for (InstanceMatch link : instancesMatchs.getLinks()){
+        for (Link link : instancesMatchs.getLinks()){
             Resource resource1 = s1.getModelSource().getResource(link.getInstanceS1());
             Resource resource2 = s2.getModelSource().getResource(link.getInstanceS2());
             if (!s1.getModelSource().contains(resource1, OWL.sameAs, resource2)){
@@ -315,12 +308,12 @@ public class RunArchitecture {
 
     }
 
-    public void linking(InstancesMatchs instancesMatchs){
+    public void linking(Links instancesMatchs){
 
         Source source1 = instancesMatchs.getSource1();
         Source source2 = instancesMatchs.getSource2();
 
-        for (InstanceMatch link : instancesMatchs.getLinks()){
+        for (Link link : instancesMatchs.getLinks()){
             Resource resource1 = source1.getModelSource().getResource(link.getInstanceS1());
             Resource resource2 = source2.getModelSource().getResource(link.getInstanceS2());
 
@@ -337,7 +330,7 @@ public class RunArchitecture {
         return this.matchs;
     }
 
-    public ArrayList<InstancesMatchs> getLinks() {
+    public ArrayList<Links> getLinks() {
         return links;
     }
 
@@ -350,12 +343,15 @@ public class RunArchitecture {
     }
 
     public Mapping getMapping(String targetClass){
+        System.out.println("Target Class : " + targetClass);
         if (this.mappings.size() == 0)
             return  null;
-        for (Mapping mapping : this.mappings)
-            if (mapping.getTargetClass().equals(targetClass)) {
+        for (Mapping mapping : this.mappings) {
+            System.out.println("Test mapping " + mapping.getTargetClass().getUri());
+            if (mapping.getTargetClass().getLocalName().equals(targetClass)) {
                 return mapping;
             }
+        }
         return null;
     }
 }
