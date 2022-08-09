@@ -30,7 +30,7 @@ public class TreeStructureProjet {
     public TreeStructureProjet(ProjectManager projectManager){
         DefaultMutableTreeNode classNode;
         DefaultMutableTreeNode top = new DefaultMutableTreeNode(projectManager.getProjectName());
-        DefaultMutableTreeNode targetSchemaNode = new DefaultMutableTreeNode(projectManager.getTargetSchema().getTargetSchema().getName());
+        DefaultMutableTreeNode targetSchemaNode = new DefaultMutableTreeNode(projectManager.getTargetSchema().getFile().getName());
         for (Element classe : projectManager.getTargetSchema().getClasses()){
             classNode = new DefaultMutableTreeNode(classe.getUri());
             targetSchemaNode.add(classNode);
@@ -61,20 +61,20 @@ public class TreeStructureProjet {
                 }
 
                 // Cas où on est sur un schéma cible
-                else if (e.getPath().getLastPathComponent().toString().equals(projectManager.getTargetSchema().getTargetSchema().getName())){
-                    GraphVisualization viz = new GraphVisualization(projectManager.getTargetSchema().getModelTargetSchema(),projectManager.getTargetSchema().getTargetSchema().getName(), false);
+                else if (e.getPath().getLastPathComponent().toString().equals(projectManager.getTargetSchema().getFile().getName())){
+                    GraphVisualization viz = new GraphVisualization(projectManager.getTargetSchema().getModelTargetSchema(),projectManager.getTargetSchema().getFile().getName(), false);
                     DI_APP.getMainWindow().add(viz);
                     viz.setVisible(true);
                 }
 
                 // Cas où on est sur la classe d'un schéma cible
-                else if (e.getPath().getPathComponent(1).toString().equals(projectManager.getTargetSchema().getTargetSchema().getName())) {
+                else if (e.getPath().getPathComponent(1).toString().equals(projectManager.getTargetSchema().getFile().getName())) {
 
                     String classe = e.getPath().getLastPathComponent().toString();
                     System.out.println(classe);
                     Model modelClass = getModelSourceClass(projectManager.getTargetSchema().getModelTargetSchema(),classe );
 
-                    GraphVisualization viz = new GraphVisualization(modelClass,projectManager.getTargetSchema().getTargetSchema().getName() + " : " + classe , false);
+                    GraphVisualization viz = new GraphVisualization(modelClass,projectManager.getTargetSchema().getFile().getName() + " : " + classe , false);
                     DI_APP.getMainWindow().add(viz);
                     viz.setVisible(true);
 

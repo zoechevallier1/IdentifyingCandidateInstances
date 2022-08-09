@@ -3,7 +3,6 @@ package view;
 import controller.ProjectManager;
 import model.Element;
 import model.Mapping;
-import model.Source;
 import javax.swing.*;
 
 import java.awt.*;
@@ -22,8 +21,6 @@ public class ShowMapping {
         }
 
         JFrame frame = new JFrame("MAPPING : " + mapping.getTargetClass().getLocalName());
-
-
         JPanel panel = new JPanel(new BorderLayout());
 
 
@@ -46,7 +43,6 @@ public class ShowMapping {
         frame.setLayout(new BorderLayout());
         frame.add(panel, BorderLayout.NORTH);
         frame.add(Box.createRigidArea(new Dimension(5, 0)), BorderLayout.CENTER);
-
 
         frame.setSize(300, 150);
         frame.setVisible(true);
