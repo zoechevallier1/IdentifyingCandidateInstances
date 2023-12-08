@@ -1,0 +1,18 @@
+<rdf:RDF>
+  <Matching>
+
+	<Config>
+		<source>athlete.owl</source>
+	</Config>	
+
+	<match>
+		<classeSource>http://dbpedia.org/ontology/Athlete</classeSource>
+		<propSource></propSource>
+		<classeCible>http://mytargetschema#Athlete</classeCible>
+		<propCible></propCible>
+	</match>
+
+	
+  </Matching>
+</rdf:RDF>
+

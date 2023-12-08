@@ -1,98 +1,91 @@
 package controller;
 
 import model.*;
-import view.MainWindow;
-import view.ProjectInterfacePanel;
+import org.apache.jena.base.Sys;
+import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
 
-import javax.swing.*;
-import java.awt.*;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.FileSystems;
-import java.nio.file.Files;
-import java.nio.file.Path;
+import java.lang.annotation.Target;
 import java.util.ArrayList;
-import java.util.logging.Logger;
 
-import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 
 public enum DataIntegration {
     DI_APP;
-    private final static Logger LOGGER = Logger.getLogger(MainWindow.class.getName());
-    private MainWindow mainWindow;
-
-    public MainWindow getMainWindow() { return mainWindow; }
 
     public void run(String[] args) throws IOException {
-        mainWindow = new MainWindow();
-        java.awt.EventQueue.invokeLater(() -> mainWindow.setVisible(true));
 
-        /*String projectName = "TEST";
-        Path parentDirectory = FileSystems.getDefault().getPath("C:\\Users\\z.chevallier\\Documents\\UseCaseHoraireMediatheques\\TST ARCHITECTURE");
-        Path projectDirectory = Files.createDirectory(parentDirectory.resolve(projectName));
-        Path targetSchemaFile = FileSystems.getDefault().getPath("C:\\Users\\z.chevallier\\Documents\\UseCaseHoraireMediatheques\\schemaCible\\schemaCiblev2.owl");
-        Path targetSchemaDestinationFile = projectDirectory.resolve(targetSchemaFile.getFileName());
-        Files.copy(targetSchemaFile, targetSchemaDestinationFile, REPLACE_EXISTING);
+        // Folder containing the test set :
+        // --> Folder "sources" contains .ttl or .owl sources files
+        // --> Folder "matches contains .xml representation of correspondences
+        // If a target schema exists : it should be named "target-schema.ttl" file and located at the root of the folder
 
-        TargetSchema targetSchema = new TargetSchema(targetSchemaFile.toFile());
+        // Link to the test set folder should be indicated here :
+        File projectDirectory = new File("Dataset/DBpedia");
 
-        ArrayList<Source> sourcesFiles = new ArrayList<Source>() ;
+        ProjectManager projectManager = new ProjectManager(projectDirectory);
+        RunArchitecture runArchitecture = new RunArchitecture(projectManager);
 
 
-        Path pathSourceFile = FileSystems.getDefault().getPath("C:\\Users\\z.chevallier\\Documents\\UseCaseHoraireMediatheques\\Sources\\Mediathèques\\mediatheques-gps-nov2020.ttl");
-        Path pathSourceDestinationFile = projectDirectory.resolve(pathSourceFile.getFileName());
-        Files.copy(pathSourceFile, pathSourceDestinationFile, REPLACE_EXISTING);
-        Source mediatheques = new Source(pathSourceDestinationFile.toFile());
-        sourcesFiles.add(mediatheques);
-        pathSourceFile = FileSystems.getDefault().getPath("C:\\Users\\z.chevallier\\Documents\\UseCaseHoraireMediatheques\\Sources\\Indicateurs médiathèques\\indicateurs-mediatheques.ttl");
-        pathSourceDestinationFile = projectDirectory.resolve(pathSourceFile.getFileName());
-        Files.copy(pathSourceFile, pathSourceDestinationFile, REPLACE_EXISTING);
-        Source indicateursMediatheques = new Source(pathSourceDestinationFile.toFile());
-        sourcesFiles.add(indicateursMediatheques);
 
-        ProjectManager projectManager = new ProjectManager(projectName, projectDirectory.toFile(), targetSchema, sourcesFiles);
+        // Print the Target Schema
+        System.out.println("~ Target Schema ~");
+        for (TargetClass tc : projectManager.getTargetSchema().getTargetClasses()) {
+            System.out.println(" Target class : " + tc.getUri());
+            for (String prop : tc.getSchemaProperties()) {
+                System.out.println(prop);
+            }
+            System.out.println();
+        }
 
-
-        ArrayList<Match> matchs = new ArrayList<Match>();
-        Match match = new Match("https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques/bibliotheque_mediatheque_ludotheque", "http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_mediatheque");
-        matchs.add(match);
-        match = new Match("https://data.grandparissud.fr/ld/ontologies/indicateurs-mediatheques/superficie_actuelle", "http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#superficie");
-        matchs.add(match);
-        indicateursMediatheques.setMatchsSchema(matchs);
-
-
-        matchs = new ArrayList<Match>();
-        match = new Match("https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020/nom_de_l_etablissement", "http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#nom_mediatheque");
-        matchs.add(match);
-        match = new Match("https://data.grandparissud.fr/ld/ontologies/mediatheques-gps-nov2020/adresse", "http://www.semanticweb.org/z.chevallier/ontologies/2022/0/untitled-ontology-28#adresse");
-        matchs.add(match);
-        mediatheques.setMatchsSchema(matchs);
-
-        mainWindow = new MainWindow();
-        java.awt.EventQueue.invokeLater(() -> mainWindow.setVisible(true));
-
-        mainWindow.setProjectManager(projectManager);
-        ProjectInterfacePanel projectInterfacePanel = new ProjectInterfacePanel(projectManager);
-        mainWindow.setLayout(new BorderLayout());
-        mainWindow.add(projectInterfacePanel, BorderLayout.WEST);
-
-        mainWindow.pack();
-        mainWindow.setVisible(true);
-        mainWindow.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        // Print the Data Sources Statistics
+        System.out.println("~ Statistics on Data Sources ~");
+        for (Source s : projectManager.getSources()){
+            System.out.println("Nom source : " + s.getName());
+            System.out.println("Nombre d'instances : "+ projectManager.getEntitiesSource(s).size());
+            System.out.println("Nombre de propriétés disctinctes : " + projectManager.countDistinctProperties(s));
+            System.out.println("Nombre moyen de propriétés par instance : " + projectManager.moyennePropParEntite(s) );
+        }
+        System.out.println();
 
 
-        RunArchitecture run = new RunArchitecture(projectManager);
 
-        InstancesMatchs instancesMatchs = new InstancesMatchs(new File("C:/Users/z.chevallier/Documents/UseCaseHoraireMediatheques/linking/mediatheques-indicateurs/alignment.xml"), mediatheques, indicateursMediatheques);
-        run.extractionSousEnsembles();*/
+        // Parameters of the evaluation
+        double percentageTypedEntities = 0.2;
+        double similarityThreshold = 0.6;
+        double deviationThreshold = 0;
 
-        //Path pathSourceFile = FileSystems.getDefault().getPath("C:\\Users\\z.chevallier\\Documents\\UseCaseHoraireMediatheques\\Sources\\Mediathèques\\mediatheques-gps-nov2020.ttl");
-        //Path pathSourceDestinationFile = projectDirectory.resolve(pathSourceFile.getFileName());
-        //Files.copy(pathSourceFile, pathSourceDestinationFile, REPLACE_EXISTING);
-        //Source mediatheques = new Source(pathSourceFile.toFile());
-        //mediatheques.getClasses();
+        // Random generation of type declarations
+        for (Source s : projectManager.getSources()){
+            projectManager.addTypeToEntities(percentageTypedEntities,s);
+        }
+
+
+        // Matching schemas
+        runArchitecture.matchAllSources();
+
+
+
+        runArchitecture.TypedEntityTreatment();
+        // Statistics on the candidate instances set
+        System.out.println("~ Results of the Typed Entities Treatment ~");
+        for (TargetClass ct : projectManager.getTargetSchema().getTargetClasses()){
+            System.out.println("Target class : " + ct.getUri());
+            System.out.println("Number of candidate instances : " + ct.getInstances().size());
+            System.out.println("True positives " + ct.getTruePositives());
+        }
+        System.out.println();
+
+        // Untyped Entities Treatment
+        System.out.println("~ Results of the Untyped Entities Treatment ~");
+        runArchitecture.UntypedEntityTreatment(similarityThreshold, deviationThreshold);
 
     }
+
+
+
+
 
      public static void main(String[] args) throws IOException{
         DI_APP.run(args);

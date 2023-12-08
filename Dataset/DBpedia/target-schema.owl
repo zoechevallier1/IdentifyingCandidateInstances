@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://mytargetschema#" 
+xml:base="http://mytargetschema" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+<owl:Class rdf:ID="Actor">
+  <rdfs:label>actor</rdfs:label>
+</owl:Class>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/birthDate">
+  <rdfs:domain rdf:resource="#Actor"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/occupation">
+  <rdfs:domain rdf:resource="#Actor"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/birthPlace">
+  <rdfs:domain rdf:resource="#Actor"/>
+</owl:DatatypeProperty>
+
+
+
+
+  <owl:Class rdf:ID="Artist">
+    <rdfs:label>artist</rdfs:label>
+  </owl:Class>
+
+<owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+  <rdfs:domain rdf:resource="#Artist"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/birthDate">
+  <rdfs:domain rdf:resource="#Artist"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/yearsActive">
+  <rdfs:domain rdf:resource="#Artist"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/birthName">
+  <rdfs:domain rdf:resource="#Artist"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/birthPlace">
+  <rdfs:domain rdf:resource="#Artist"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/givenName">
+  <rdfs:domain rdf:resource="#Artist"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/name">
+  <rdfs:domain rdf:resource="#Artist"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/instrument">
+  <rdfs:domain rdf:resource="#Artist"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/occupation">
+  <rdfs:domain rdf:resource="#Artist"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/genre">
+  <rdfs:domain rdf:resource="#Artist"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/associatedMusicalArtist">
+  <rdfs:domain rdf:resource="#Artist"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/associatedBand">
+  <rdfs:domain rdf:resource="#Artist"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/activeYearsStartYear">
+  <rdfs:domain rdf:resource="#Artist"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/birthPlace">
+  <rdfs:domain rdf:resource="#Artist"/>
+</owl:DatatypeProperty>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <owl:Class rdf:ID="Athlete">
+    <rdfs:label>athlete</rdfs:label>
+  </owl:Class>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/fullname">
+  <rdfs:domain rdf:resource="#Athlete"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/birthDate">
+  <rdfs:domain rdf:resource="#Athlete"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/birthDate">
+  <rdfs:domain rdf:resource="#Athlete"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/years">
+  <rdfs:domain rdf:resource="#Athlete"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/careerStation">
+  <rdfs:domain rdf:resource="#Athlete"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/position">
+  <rdfs:domain rdf:resource="#Athlete"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/team">
+  <rdfs:domain rdf:resource="#Athlete"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/name">
+  <rdfs:domain rdf:resource="#Athlete"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/Person/height">
+  <rdfs:domain rdf:resource="#Athlete"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/property/birthPlace">
+  <rdfs:domain rdf:resource="#Athlete"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://dbpedia.org/ontology/height">
+  <rdfs:domain rdf:resource="#Athlete"/>
+</owl:DatatypeProperty>
+
+  
+</rdf:RDF>

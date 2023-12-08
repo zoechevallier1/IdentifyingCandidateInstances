@@ -27,7 +27,7 @@ public class FileToModelGraph {
     }
 
     public static DirectedGraph FileToGraph(File owlFile){
-        System.out.println(owlFile);
+        //System.out.println(owlFile);
         // Lecture du fichier OWL.
         Model mapModel = FileManager.get().loadModel(owlFile.getAbsolutePath());
         /*StmtIterator x = mapModel.listStatements();

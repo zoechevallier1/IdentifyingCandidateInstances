@@ -1,7 +1,6 @@
 package model;
 
 public class Element {
-
     private Source source = null;
     private TargetSchema targetSchema = null;
     private String uri;
@@ -35,6 +34,4 @@ public class Element {
     public Source getProvenance(){
         return this.source;
     }
-
-
 }

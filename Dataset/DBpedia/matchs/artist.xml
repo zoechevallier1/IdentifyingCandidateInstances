@@ -1,0 +1,18 @@
+<rdf:RDF>
+  <Matching>
+
+	<Config>
+		<source>artist.owl</source>
+	</Config>	
+
+	<match>
+		<classeSource>http://dbpedia.org/ontology/Artist</classeSource>
+		<propSource></propSource>
+		<classeCible>http://mytargetschema#Artist</classeCible>
+		<propCible></propCible>
+	</match>
+
+	
+  </Matching>
+</rdf:RDF>
+
